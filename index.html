@@ -330,52 +330,51 @@
 <!--Esposible que mas adelante borre esta section-->
        <!-- ======= Tabla pedidos Section ======= -->
     <section id="book-a-table" class="book-a-table">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Has tu pedido. <span>Escribe</span></h2>
-          <p>Tendremos el guste atenderte esperamos poder suplir todas sus necesidades.</p>
+  <div class="container">
+    <div class="section-title">
+      <h2>Has tu pedido. <span>Escribe</span></h2>
+      <p>Tendremos el guste atenderte esperamos poder suplir todas sus necesidades.</p>
+    </div>
+    <form action="https://formspree.io/f/mbjndyen" method="POST" class="php-email-form">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 form-group">
+          <label for="name">Tu Nombre:</label>
+          <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
         </div>
-        <form action="https://formspree.io/f/mbjndyen" method="POST" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
-              <label for="name">Tu Nombre:</label>
-              <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <label for="email">Tu Correo:</label>
-              <input type="email" class="form-control" name="email" id="email" placeholder="Tu Correo" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <label for="phone">Tu Telefono:</label>
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Tu Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <label for="date">Dirección:</label>
-              <input type="text" name="date" class="form-control" id="date" placeholder="Direccion" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <label for="time">Hora:</label>
-              <input type="text" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <label for="message">Orden: Sea todo lo especifico que pueda</label>
-            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Orden: Sea todo lo especifico que pueda"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Tu solicitud de pedido fue enviada. Nos pondremos en contacto o enviaremos un correo electrónico para confirmar tu reserva. ¡Gracias!</div>
-          </div>
-          <div class="text-center"><button type="submit">Enviar Orden</button></div>
-        </form>
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <label for="email">Tu Correo:</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Tu Correo" data-rule="email" data-msg="Please enter a valid email">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+          <label for="phone">Tu Telefono:</label>
+          <input type="text" class="form-control" name="phone" id="phone" placeholder="Tu Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <label for="date">Dirección:</label>
+          <input type="text" name="date" class="form-control" id="date" placeholder="Direccion" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 form-group mt-3">
+          <label for="time">Hora:</label>
+          <input type="text" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+          <div class="validate"></div>
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <label for="message">Pedidos</label>
+        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Sea todo lo especifico que pueda"></textarea>
+        <div class="validate"></div>
+      </div>
+      <div class="mb-3">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Tu solicitud de pedido fue enviada. Nos pondremos en contacto o enviaremos un correo electrónico para confirmar tu reserva. ¡Gracias!</div>
+      </div>
+      <div class="text-center"><button type="submit">Enviar Orden</button></div>
+    </form>
         
 
       </div>
